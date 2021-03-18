@@ -1,0 +1,17 @@
+print(2+2)
+print(2**3)
+print(2*2)
+print(2.1+2.5)
+print(2.3-0.3)
+print(2^3)
+print(2.6/1.6)
+print(100*2+50/2)
+print(5%%2)
+print(10%%5)
+
+v1 <- c(1,2,3)
+
+print(v1+v1)
+print(v1*v1)
+print(v1*10)
+print(v1**3)
