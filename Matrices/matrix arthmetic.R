@@ -1,0 +1,12 @@
+mat <- matrix(1:25,byrow=T,nrow=5)
+print(mat)
+print(mat*2)
+print(mat**2)
+print(mat/2)
+print(mat%%2)
+print(1/mat)
+print(mat>15)
+print(mat/mat)
+print(mat*mat)
+#real matrix multiplication
+print(mat%*%mat)
