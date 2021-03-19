@@ -1,0 +1,11 @@
+alp <- c('a','b','b','d','a')
+id <- c(1,2,3,4,5)
+fact.alph <- factor(alp)
+print(fact.alph)
+
+numc <- c('a','b','c','c','b','a')
+print(factor(numc,ordered = F))
+print(factor(numc,ordered = T,levels = c('a','b','c')))
+numc.fac <- factor(numc,ordered = T,levels = c('a','b','c'))
+print(summary(numc.fac))
+print(summary(numc))
