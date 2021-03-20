@@ -32,3 +32,40 @@ print(df[['col1']])
 print(df['col1'])
 
 print(df[c('col1','col2')])
+
+#adding rows
+ndf <- data.frame(col1=90,col2="A")
+print(ndf)
+print(df)
+
+dfnew <- rbind(ndf,df)
+print(dfnew)
+
+#method 1
+dfnew$col3 <- 2*dfnew$col1
+print(dfnew)
+#method 2
+dfnew[,'col4'] <- 3*dfnew$col3
+print(dfnew)
+
+colnames(dfnew) <- c('a','b','c','d')
+print(dfnew)
+
+colnames(dfnew)[1] <- c('aaa')
+print(dfnew)
+
+print(head(df,6))
+print(df[-2,])
+
+print(head(mtcars))
+
+print(mtcars[mtcars$mpg>30,])
+print(mtcars[ (mtcars$mpg>25) & (mtcars$cyl==4) ,])
+print(mtcars[ (mtcars$mpg>25) & (mtcars$cyl==4) ,c('mpg','cyl','hp')])
+print(subset(mtcars,mpg>25 & cyl==4))
+
+print(is.na(mtcars))
+print(any(is.na(mtcars)))
+
+df[is.na(df)] <- 0
+print(df)
